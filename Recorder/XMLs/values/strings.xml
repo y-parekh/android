@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Recorder</string>
+    <string name="file_name">Enter File Name</string>
+</resources>
