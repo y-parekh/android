@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentication">
+
+    <EditText
+        android:id="@+id/edtRegUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="Enter Username"/>
+
+    <EditText
+        android:id="@+id/edtRegEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtRegUser"
+        android:hint="Enter Email"/>
+
+    <EditText
+        android:id="@+id/edtRegPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtRegEmail"
+        android:hint="Enter Password"/>
+
+    <Button
+        android:id="@+id/btnGetCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Code"
+        android:layout_below="@+id/edtRegPass"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/edtRegCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Code here"
+        android:layout_below="@+id/btnGetCode"/>
+
+    <Button
+        android:id="@+id/btnRegUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtRegCode"
+        android:layout_centerHorizontal="true"
+        android:text="Register"/>
+
+</RelativeLayout>
